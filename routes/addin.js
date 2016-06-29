@@ -21,7 +21,6 @@ exports.addIng = function (Ing) {
         res.json({ error: err });
       } else {
         res.json({ ing: ing });
-        //alert("Ingridiens har lagts till korrekt");
       }
     });
   };
