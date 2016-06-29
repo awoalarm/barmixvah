@@ -1,0 +1,41 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/libs/bootstrap-css/css/bootstrap.css')
+  link(rel='stylesheet', href='/stylesheets/overrides.css')
+  script(type='text/javascript', src='/javascripts/controllers/DrinkController.js')
+
+block content
+  div#addScope.row(ng-controller="DrinkController", ng-init="setDrinks(#{JSON.stringify(drinks)}); setIngs( #{JSON.stringify(ings)} )")
+    div.col-md-2
+    div.col-md-8
+      h1.title Add Drink
+      br
+      form(ng-submit="addNewDrink()")
+        div.row
+          div.col-md-3 Name
+          div.col-md-5
+            input(ng-model="newDrink.name", placeholder="Name")
+        div.row
+          div.col-md-3 Description
+          div.col-md-5
+            input(ng-model="newDrink.besk", placeholder="Drink Description")    
+        div.row
+          div.col-md-3 Filename
+          div.col-md-5
+            input(ng-model="newDrink.image", placeholder="Relative Link URL")
+        div.row
+          div.col-md-3 Ingredients
+          div.col-md-1
+            a(ng-click="addNewIngredient()") +
+        div#ingredients.row
+          div.row(ng-repeat="ingredient in newDrink.ingredients")
+            div.col-md-3
+            div.col-md-3
+              select.mixers(ng-model="ingredient.name", ng-options="ing.name as ing.name for ing in ings | orderBy: 'name'")
+                option(value="") -- Choose --
+            div.col-md-3
+              input.addForm.ingredient(ng-model="ingredient.amount", placeholder='0')
+            div.col-md-1
+              a(ng-click="removeIngredient($index)") -
+        button.btn Add Drink

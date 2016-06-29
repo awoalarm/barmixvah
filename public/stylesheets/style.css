@@ -1,0 +1,319 @@
+a {
+  color: #00B7FF;
+}
+
+#fullWidth {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Cover */
+
+#cover {
+  display: inline-block;
+  margin: 0px 0px 50px 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  background-position: center;
+  background-size: cover;
+  background-image: url('/images/citrus-sunset.jpg');
+}
+
+.title {
+  font-size: 180px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 61px;
+  text-align: center;
+  line-height: 50px;
+  margin: -10px 0px 30px 0px;
+}
+
+.section {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+
+/* Drink Controls */
+#drinks {
+  text-align: center;
+  line-height: 0px;
+}
+
+#drinkScope {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  cursor: default;
+}
+
+.drinkContainer {
+  display: inline-block;
+  height: 280px;
+  width: 31%;
+  margin: 10px;
+  line-height: 0.9em;
+  background-color: #FF0000;
+}
+
+.drinkImage {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.drinkName {
+  float: left;
+  width: 100%;
+  bottom: 0px;
+  color: #FFFFFF;
+  background-color: rgba(0,0,0,0.2);
+  padding: 10px;
+  font-size: 1em;
+}
+
+.hiddenIngredientFloat {
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  line-height: 0.6em;
+  padding-right: 20px;
+  padding-top: 10px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.hiddenIngredients {
+  visibility: hidden;
+}
+
+.selectedHiddenIngredient {
+  display: inline-block !important;
+}
+
+.ingredientText {
+  font-size: 0.5em;
+  list-style-type: none;
+  margin-left: -20px;
+  color: #EEEEEE;
+}
+
+.left-align {
+  display: inline-block;
+  text-align: left !important;
+}
+
+.selectedDrink {
+  /*border: 10px solid #FF0000 !important;*/
+  -webkit-filter: brightness(125%);
+  opacity: 0.7 !important;
+  visibility: visible;
+}
+
+
+/* Sidebar */
+#launcher {
+  display: inline-block;
+  position: fixed;
+  width: 240px;
+  text-align: left;
+  height: 100%;
+  background-color: #e74c3c;
+  padding: 10px;
+  z-index: 1;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #555555;
+}
+
+#selectedDrink {
+  height: 220px;
+  width: 220px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #c0392b;
+}
+
+#selectSize {
+  /*background-color: #e74c3c;*/
+  width: 100%;
+  margin: 70px 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.drinkSize {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 0px 10px;
+  font-size: 48px;
+  line-height: 150px;
+  border-radius: 12px;
+  vertical-align: middle;
+  background-color: #c0392b;
+}
+
+.disabled {
+  color: #CCCCCC !important;
+}
+
+.noselection {
+  background-color: #888888 !important;
+}
+
+.selectedSize {
+  background-color: #FFCCCC !important;
+}
+
+#make {
+  display: inline-block;
+  background-color: #c0392b;
+  text-align: left;
+  margin: 20px 0px 70px 0px;
+  padding: 0px;
+  width: 90%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#makeProgress {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  margin: 0px;
+  background-color: #888888;
+}
+
+#makeText {
+  display: inline-block;
+  margin: 0px;
+  width: 90%;
+  height: 200px;
+  line-height: 220px;
+  vertical-align: middle;;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  /*font-size: 2.2em;*/
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+
+/* Pump Controls */
+#pumps {
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.pumpContainer {
+  display: inline-block;
+  margin: 4px;
+  width: 17%;
+  height: 50px;
+}
+
+.mixers {
+  background-color: #FFDDDD;
+  width: 100%;
+  height: 42px;
+  margin: 5px;
+  font: 16px "AvenirNext-Regular", Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+  border: 0px solid #e74c3c;
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+#pumpControlToggle {
+  width: 90px;
+}
+
+.floatingPumpButtons {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+#hiddenPumpControls {
+  display: inline-block;
+  position: absolute;
+  width: 500px;
+  text-align: right;
+  height: 50px;
+  top: 50px;
+  right: 0px;
+}
+
+#plusMinus {
+  display: inline-block;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: -100px;
+}
+
+#allPumps {
+  font-size: 15px;
+}
+
+.active {
+  color: #FF0000 !important;
+  background-color: #FFCCCC !important;
+}
+
+.pumpButton {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font: 25px "Menlo";
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #FFEEEE;
+}
+
+.singlePump {
+  font-size: 15px !important;
+}
+
+/* Add */
+
+.addForm {
+  width: 180px;
+}
+
+/* Edit */
+
+.editRow {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #FFEEEE;
+}
+
+
+/* Footer */
+.footerText {
+  font-size: 0.7em;
+  color: #777777;
+  text-align: center;
+}

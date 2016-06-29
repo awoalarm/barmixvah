@@ -1,0 +1,18 @@
+doctype html
+html(ng-app="DrinkModule")
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    script(type='text/javascript', src='/libs/angular/angular.js')
+    script(type='text/javascript', src='/libs/angular-bootstrap/ui-bootstrap-tpls.js')
+    script(type='text/javascript', src='/javascripts/DrinkModule.js')
+    script(type='text/javascript', src='/libs/jquery/jquery.min.js') 
+
+    block head
+  body
+    block content
+
+  div.footerText Copyright &copy; 2014 Yu Jiang Tham
+
+block foot

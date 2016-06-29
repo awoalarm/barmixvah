@@ -1,0 +1,19 @@
+extends layout
+
+block head
+  link(rel='stylesheet', href='/libs/bootstrap-css/css/bootstrap.css')
+  link(rel='stylesheet', href='/stylesheets/overrides.css')
+  script(type='text/javascript', src='/javascripts/controllers/DrinkController.js')
+
+block content
+  div#addScope.row(ng-controller="DrinkController", ng-init="setIngs(#{JSON.stringify(ings)})")
+    div.col-md-2
+    div.col-md-8
+      h1.title Add Ingrediens
+      br
+      form(ng-submit="addNewIng()")
+        div.row
+          div.col-md-3 Name
+          div.col-md-5
+            input(ng-model="newIng.name", placeholder="Name")
+         button.btn Add Ingrediens
