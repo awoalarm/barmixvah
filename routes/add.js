@@ -6,8 +6,8 @@ exports.form = function (Drink, Ing) {
 	 Ing.find({}, function (err, ings) {   
       res.render('add', {
         title: 'Bar Mixvah: Add Drink',
-        drinks: drinks
-		ings: ings
+        drinks: drinks,
+	ings: ings
       });
       });
     });
