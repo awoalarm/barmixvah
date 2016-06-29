@@ -1,6 +1,24 @@
 Bar Mixvah
 ----------
 
+Modified version
+----------
+
+This is an modified version of Bar Mixvah, modified by me Andreas.
+This version has:
+
+* Description field for drinks, (You can add info if they need some special fruit, ice or something like that)
+* You administrate the ingrediens from a page instead of in the code.
+* You can delete drinks and ingredients.
+
+To add & edit ingredients use the following page: localhost:3000/addin for adding new ingredients, and localhost:3000/editin for edit ingredients.
+
+You can also delete drinks in the edit page for drinks, and in ingredients page, you can delete ingredients.
+They don't disapere from the page automatic, so you need to reload the page for now.
+
+----------
+
+
 Bar Mixvah is an automated drink mixing robot that is controlled via a beautiful web interface.  Users can select a drink, select a size, and have their drink made for them in front of their eyes!
 
 
